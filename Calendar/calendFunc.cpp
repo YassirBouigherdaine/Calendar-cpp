@@ -19,7 +19,7 @@ void draw_calend(int year)
 
 	int weekDay = (y + y / 4 - y / 100 + y / 400 + t[0] + 1) % 7;       // to determine the day of the week (sunday = 0)
 
-	for (int i = 0; i < sizeof(daysOfMon); i++)
+	for (int i = 0; i < 12; i++)
 	{
 		if (i == 1)      // fabruary
 		{
@@ -32,7 +32,6 @@ void draw_calend(int year)
 			{
 				days = daysOfMon[i];
 			}
-
 		}
 
 		else
